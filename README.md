@@ -10,7 +10,8 @@
 
 ## L’explication du code
 
-Le code fourni contient un systeme de vérification d'Email développée en TDD
+Le code fourni contient un systeme de vérification d'Email développée en TDD,
+(Test écrit avant le code, puis implémentation minimale pour le faire passer)
 
 Les règles de validation d’email sont :
 
@@ -26,10 +27,12 @@ Les règles de validation d’email sont :
 Ce projet a été réalisé dans le cadre de l’examen de DevOps.  
 L’objectif est de mettre en place un environnement DevOps complet avec :
 
-- Un repository GitHub public  
+- Un repository GitHub public (avec accès à Monsieur olivier.choquet@vinci.be ainsi que sewelseb)  
 - Une pipeline de CI avec GitHub Actions  
 - Une approche TDD (Test Driven Development)  
-- Un code écrit en TypeScript  
+- Travail éffectuer sur un branche dev que j'ai mergé vers main
+- Un code écrit en TypeScript
+
 
 ## Lancer les tests
 
