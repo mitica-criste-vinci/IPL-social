@@ -24,6 +24,23 @@ it("should return false when given email with space", () => {
 });
 
 
+it("should return false when given no text before @", () => {
+  const actual = validator.isValid("@mail.com");
+
+  expect(actual).toBe(false);
+});
+
+
+it("should return false when given no text after @", () => {
+  const actual = validator.isValid("test@");
+  
+  expect(actual).toBe(false);
+});
+
+
+
+
+
 
 
 

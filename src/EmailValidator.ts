@@ -1,6 +1,6 @@
 export class EmailValidator {
   isValid(email: string): boolean {
-    
+
     for (let c of email) {
       if (c === " ") return false;
     }
@@ -10,7 +10,9 @@ export class EmailValidator {
       if (email[i] === "@") atIndex = i;
     }
 
-    if (atIndex === -1) return false;
+    if (atIndex <= 0) return false;
+    if (atIndex === email.length - 1) return false;
+
 
     return true;
   }
