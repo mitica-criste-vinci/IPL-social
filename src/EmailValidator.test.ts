@@ -12,9 +12,18 @@ describe("EmailValidator", () => {
 
   it("should return true when given string with one @", () => {
   const actual = validator.isValid("test@mail.com");
-  
+
   expect(actual).toBe(true);
 });
+
+
+it("should return false when given email with space", () => {
+  const actual = validator.isValid("test @mail.com");
+  
+  expect(actual).toBe(false);
+});
+
+
 
 
 
