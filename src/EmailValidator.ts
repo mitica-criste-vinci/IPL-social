@@ -20,6 +20,7 @@ export class EmailValidator {
     }
 
     if (!hasDot) return false;
+    if (email[email.length - 1] === ".") return false;
 
 
 
