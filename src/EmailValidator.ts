@@ -7,7 +7,10 @@ export class EmailValidator {
 
     let atIndex = -1;
     for (let i = 0; i < email.length; i++) {
-      if (email[i] === "@") atIndex = i;
+      if (email[i] === "@"){
+        atIndex = i;
+        break;
+      } 
     }
 
     if (atIndex <= 0) return false;
@@ -16,7 +19,10 @@ export class EmailValidator {
 
     let hasDot = false;
     for (let i = atIndex + 1; i < email.length; i++) {
-      if (email[i] === ".") hasDot = true;
+      if (email[i] === "."){
+        hasDot = true;
+        break;
+      }
     }
 
     if (!hasDot) return false;
