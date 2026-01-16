@@ -19,7 +19,7 @@ describe("EmailValidator", () => {
 
 it("should return false when given email with space", () => {
   const actual = validator.isValid("test @mail.com");
-  
+
   expect(actual).toBe(false);
 });
 
