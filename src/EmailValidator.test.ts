@@ -38,8 +38,11 @@ it("should return false when given no text after @", () => {
 });
 
 
-
-
+it("should return false when domain has no dot", () => {
+  const actual = validator.isValid("test@mailcom");
+  
+  expect(actual).toBe(false);
+});
 
 
 

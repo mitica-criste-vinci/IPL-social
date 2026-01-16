@@ -14,6 +14,15 @@ export class EmailValidator {
     if (atIndex === email.length - 1) return false;
 
 
+    let hasDot = false;
+    for (let i = atIndex + 1; i < email.length; i++) {
+      if (email[i] === ".") hasDot = true;
+    }
+
+    if (!hasDot) return false;
+
+
+
     return true;
   }
 }
